@@ -1,0 +1,32 @@
+@import url('./tailwind.css');
+@import url('./fonts.css');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-orange {
+  background-color: #FFA500;
+}
+
+.bg-orange-light {
+  background-color: rgba(255, 250, 241, 1);
+}
+
+li{
+  text-decoration: dotted;
+  color: #000;
+}
+
+.icons > img{
+  width: 25px;
+  height: 25px;
+  margin: 0 10px;
+}
+
+.patternBG{
+  background-image: url('../assets//pattern-background.svg');
+  background-repeat: repeat;
+}
