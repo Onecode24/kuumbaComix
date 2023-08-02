@@ -8,6 +8,7 @@ import Twitter from "./assets/icons/twitter.svg";
 import Facebook from "./assets/icons/facebook.svg";
 import Instagram from "./assets/icons/instagram.svg";
 import Youtube from "./assets/icons/youtube.svg";
+import NotFound from "./components/global/NotFound";
 
 export default function App() {
   return (
@@ -19,6 +20,8 @@ export default function App() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<NoMatch />} /> */}
         </Route>
+        {/* For not fount pages */}
+      <Route path="*" element={<NotFound />} /> 
       </Routes>
     </div>
   );

@@ -30,3 +30,11 @@ li{
   background-image: url('../assets//pattern-background.svg');
   background-repeat: repeat;
 }
+
+.text-orange{
+  color: rgba(255, 165, 0, 1);
+}
+
+.border-orange{
+   border: 1px solid rgba(255, 165, 0, 0.1);
+}

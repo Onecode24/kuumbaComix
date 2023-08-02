@@ -1,5 +1,10 @@
 import AfricaBanniere from '../assets/africa-banniere.png';
+import BDCard from '../components/global/BDCard';
 import '../styles/index.css';
+import BDGuezo from '../assets/bd-guezo.png';
+import BDTolegba from '../assets/bd-tolegba.png';
+import BDPygmes from '../assets/bd-pygmes.png';
+import BDPanthere from '../assets/bd-panthere.png';
 const Home = () => {
     return (
          <div>
@@ -20,6 +25,24 @@ const Home = () => {
                     <p className='montserrat-medium  text-justify'>Passionné d'art, de culture ou des récits, notre plateforme vous fait vivre une expérience de lecture époustouflante. Embarquez dans un voyage épique à travers les époques, des légendes ancestrales aux récits contemporains.</p>
                 </div>
                 <button className='bg-orange py-4 px-8 rounded-lg h-min montserrat-regular'>Explorez</button>
+            </div>
+            <div>
+                <div className='flex justify-evenly my-10'>
+                    <div className='flex justify-center'>
+                        <BDCard img={BDGuezo} title='Les Aventures de Guézo' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/1' />
+                    </div>
+                    <div className='flex justify-center '>
+                        <BDCard img={BDTolegba} title='Le Roi Tolègba' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/2' />
+                    </div>
+                </div>
+                <div className='flex justify-evenly my-10'>
+                    <div className='flex justify-center'>
+                        <BDCard img={BDPygmes} title='Les pygmées mystérieux' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/3' />
+                    </div>
+                    <div className='flex justify-center '>
+                        <BDCard img={BDPanthere} title='Le Roi Panthere' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/4' />
+                    </div>
+                </div>
             </div>
          </div>
          
