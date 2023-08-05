@@ -5,6 +5,10 @@ import BDGuezo from '../assets/bd-guezo.png';
 import BDTolegba from '../assets/bd-tolegba.png';
 import BDPygmes from '../assets/bd-pygmes.png';
 import BDPanthere from '../assets/bd-panthere.png';
+import TestimonalsCards from '../components/TestimonalsCards';
+import Input from '../components/global/Input';
+
+import profile from '../assets/profile.svg';
 const Home = () => {
     return (
          <div>
@@ -44,6 +48,27 @@ const Home = () => {
                     </div>
                 </div>
             </div>
+            <section about='avis' className='px-10' >
+                <div className='px-4'>
+                    <h3 className='montserrat-black text-2xl'>Avis de lecteurs</h3>
+                    <p className='montserrat-medium w-2/3 text-sm my-3'>Les utilisateurs sont conquis par notre bibliothèque d'histoires africaines en BD. Ils sont transportés dans un monde captivant où l'art et l'histoire s'entremêlent. Découvrez leurs avis élogieux  ici :</p>
+                </div>
+                <div className='flex'>
+                    <div className='p-4 w-1/2'><TestimonalsCards profile={profile} name="Jeau-Eudes COKOU" testimonal="Les BD sont bien réalisées, avec des histoires riches et des illustrations nickel. J'ai redécouvert l'histoire et la culture africaines en explorant la bibliothèque. Je recommande vivement cette plateforme pour tous les amoureux de BD en quête d'aventures uniques !" /></div>
+                    <div className='p-4 w-1/2'><TestimonalsCards profile={profile} name="Jeau-Eudes COKOU" testimonal="Je suis littéralement accro à cette plateforme ! Les BD africaines proposées sont une source infinie d'inspiration et de divertissement. Les personnages sont si attachants et les récits si captivants. Je passe des heures à explorer les différentes histoires sans m'ennuyer. Merci de me permettre de découvrir l'Afrique d'une manière si passionnante ! " /></div>
+                    <div className='p-4 w-1/2'><TestimonalsCards profile={profile} name="Jeau-Eudes COKOU" testimonal="Les BD sont bien réalisées, avec des histoires riches et des illustrations nickel. J'ai redécouvert l'histoire et la culture africaines en explorant la bibliothèque. Je recommande vivement cette plateforme pour tous les amoureux de BD en quête d'aventures uniques !" /></div>
+                    <div className='p-4 w-1/2'><TestimonalsCards profile={profile} name="Jeau-Eudes COKOU" testimonal="Les BD sont bien réalisées, avec des histoires riches et des illustrations nickel. J'ai redécouvert l'histoire et la culture africaines en explorant la bibliothèque. Je recommande vivement cette plateforme pour tous les amoureux de BD en quête d'aventures uniques !" /></div>
+                </div>
+            </section>
+            <section about='newsletter'  className='mx-16 my-10 p-10 bg-orange'>
+                <h4 className='montserrat-extrabold text-3xl'>Abonnez-vous à notre Newsletter</h4>
+                <p className='my-3 montserrat-regular'>Ne ratez rien de nos actualités en vous abonnant à notre Newsletter.  Restez à l'affût des dernières BD, des promotions spéciales et plongez dans l'univers captivant des histoires africaines. Abonnez-vous dès maintenant !</p>
+                <div className='flex newsletter montserrat-regular mt-5 items-center'>
+                    <input type="text" name="name" placeholder="Votre nom*" className='w-full' />
+                    <input type="email" name="e-mail" placeholder="Email*" className='w-full' />
+                    <input type="button" value="S'abonner" className='w-full text-white btn-bg-gris cursor-pointer' />
+                </div>
+            </section>
          </div>
          
     );
