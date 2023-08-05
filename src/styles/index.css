@@ -38,3 +38,26 @@ li{
 .border-orange{
    border: 1px solid rgba(255, 165, 0, 0.1);
 }
+
+.bg-viewport{
+  width: 100vw;
+  height: 100vh;
+}
+
+.bg-input{
+  background-color: rgba(248, 248, 248, 1)
+}
+
+@media (max-width: 876px ) {
+  .respCard{
+    width: 87%;
+  }
+  .centerCard{
+    padding: 0;
+    justify-content: center;
+  }
+}
+
+.text-gris{
+  color: rgba(180, 179, 179, 1);
+}

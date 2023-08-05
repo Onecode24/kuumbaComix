@@ -9,6 +9,8 @@ import Facebook from "./assets/icons/facebook.svg";
 import Instagram from "./assets/icons/instagram.svg";
 import Youtube from "./assets/icons/youtube.svg";
 import NotFound from "./components/global/NotFound";
+import SignIn from "./pages/signin"
+import Login from "./pages/login"
 
 export default function App() {
   return (
@@ -21,6 +23,8 @@ export default function App() {
           <Route path="*" element={<NoMatch />} /> */}
         </Route>
         {/* For not fount pages */}
+      <Route path="/signin" element={<SignIn />} />
+      <Route path="/login" element={<Login />} />
       <Route path="*" element={<NotFound />} /> 
       </Routes>
     </div>
@@ -61,8 +65,8 @@ function Layout() {
                </li>
             </div>
             <li className="text-white flex px-2 py-2 items-center border-white border rounded-lg">
-               <img src={EspaceIcon} alt="" />
-               <Link to="/" className="px-2">Mon Espace</Link>
+               <img src={EspaceIcon} alt="account" />
+               <Link to="/signin" className="px-2">Mon Espace</Link>
             </li>
          </ul>
       </nav>
