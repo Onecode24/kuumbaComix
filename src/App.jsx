@@ -12,6 +12,8 @@ import Hambuger from "./assets/icons/hambergers.svg";
 import NotFound from "./components/global/NotFound";
 import SignIn from "./pages/signin"
 import Login from "./pages/login"
+import Hamburger from 'hamburger-react'
+import { useState } from "react";
 
 export default function App() {
   return (
@@ -33,6 +35,7 @@ export default function App() {
 }
 
 function Layout() {
+   const [isOpen, setOpen] = useState(false)
   return (
     <div >
       <nav className="bg-orange flex py-5 px-10 items-center justify-between">
@@ -70,7 +73,38 @@ function Layout() {
                <Link to="/signin" className="px-2">Mon Espace</Link>
             </li>
          </ul>
-         <img src={Hambuger} alt="" className="desktop-hide " />
+         <div className="desktop-hide">
+            <Hamburger toggled={isOpen}  size={25} color="white" onToggle={toggled => {
+               if(toggled){
+                  document.querySelector('.nav-hamburger').classList.add('mobile-block')
+               }else{
+                  document.querySelector('.nav-hamburger').classList.remove('mobile-block')
+               }
+               setOpen(toggled)
+            }}  />
+            <div className="nav-hamburger mobile-w-full mobile-hide">
+               <ul className=" bg-orange  my-5 montserrat-regular mobile-w-full">
+                  <li>
+                     <Link to="/">Acceuil</Link>
+                  </li>
+                  <li>
+                     <Link to="/">Catégorie</Link>
+                  </li>
+                  <li>
+                     <Link to="/">Abonnement</Link>
+                  </li>
+                  <li>
+                     <Link to="/">Communauté</Link>
+                  </li>
+                  <li className="text-white flex  p-2 items-center border-white border rounded-lg max-w-max">
+                     <img src={EspaceIcon} alt="account" className="mobile-hide" />
+                     <Link to="/signin" className="">Mon Espace</Link>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         
+
 
 
       </nav>
