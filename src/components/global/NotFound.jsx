@@ -6,9 +6,9 @@ const NotFound = () => {
             <div>
                 <h1 className='montserrat-black text-3xl px-20 py-10'>KuumbaComix.</h1>
             </div>
-            <div className='flex justify-evenly items-center'>
-                <img src={working} alt="" className='w-1/3' />
-                <div>
+            <div className='flex justify-evenly items-center mobile-block'>
+                <img src={working} alt="" className='w-1/3 mobile-w-full' />
+                <div className='mobile-text-center mobile-py-20'>
                     <h1 className='montserrat-bold text-2xl'>En cours de developpement</h1>
                     <p className='montserrat-regular text-lg'>Please wait this is coming soon </p>
                 </div>
