@@ -8,6 +8,7 @@ import Twitter from "./assets/icons/twitter.svg";
 import Facebook from "./assets/icons/facebook.svg";
 import Instagram from "./assets/icons/instagram.svg";
 import Youtube from "./assets/icons/youtube.svg";
+import Hambuger from "./assets/icons/hambergers.svg";
 import NotFound from "./components/global/NotFound";
 import SignIn from "./pages/signin"
 import Login from "./pages/login"
@@ -39,7 +40,7 @@ function Layout() {
             <h2 className="text-2xl montserrat-extrabold">
                <Link Link to="/">KuumbaComix.</Link>
             </h2>
-            <ul className="flex ml-5 w-2/3 justify-around montserrat-regular">
+            <ul className="flex ml-5 w-2/3 justify-around montserrat-regular mobile-hide">
                <li>
                   <Link to="/">Acceuil</Link>
                </li>
@@ -55,7 +56,7 @@ function Layout() {
             </ul>
          </div>
 
-         <ul className="flex w-1/5 justify-around montserrat-regular items-center">
+         <ul className="flex w-1/5 justify-around montserrat-regular items-center mobile-hide">
             <div>
                <input type="text" name="" id="" className="hidden" />
                <li>
@@ -69,14 +70,17 @@ function Layout() {
                <Link to="/signin" className="px-2">Mon Espace</Link>
             </li>
          </ul>
+         <img src={Hambuger} alt="" className="desktop-hide " />
+
+
       </nav>
 
       <div>
          <Outlet />
       </div>
 
-      <footer className="flex justify-evenly bg-orange-light py-5 montserrat-semibold">
-         <div className="flex icons">
+      <footer className="flex justify-evenly bg-orange-light py-5 montserrat-semibold mobile-block mobile-px-20 ">
+         <div className="flex icons mobile-absolute mobile-flex-end min-mobile-w-95">
             <img src={Twitter} alt="Twitter" />
             <img src={Facebook} alt="Facebook" />
             <img src={Youtube} alt="Youtube" />

@@ -80,3 +80,102 @@ li{
 .btn-bg-gris{
   background-color: rgba(29, 41, 57, 1);
 }
+
+@media screen and (max-width:876px){
+  .mobile-hide{
+    display: none;
+  }
+  .mobile-display{
+    display: flex;
+  }
+  .mobile-block{
+    display: block;
+  }
+  .block-reverse{
+    flex-direction: column-reverse;
+  }
+  .mobile-py-10{
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .mobile-py-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .mobile-pt-20{
+    padding-top: 20px;
+  }
+  .mobile-pb-20{
+    padding-bottom: 20px;
+  }
+  .mobile-mb-40{
+    margin-bottom: 40px;
+  }
+  .mobile-mx-20{
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .mobile-px-10{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .mobile-px-20{
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  .mobile-w-full{
+    width: 100%;
+  }
+  .min-mobile-w-95{
+    min-width: 95%;
+  }
+  .mobile-w-half{
+    width: 50%;
+  }
+  .mobile-text-align{
+    text-align: left;
+  }
+  .mobile-text-size-2em{
+    font-size: 1.7em;
+  }
+  .mobile-border-blue{
+    border: 1px solid rgba(0, 94, 184, 1);
+  }
+  .mobile-text-color-blue{
+    color: rgba(0, 94, 184, 1);
+  }
+  .mobile-radius-none{
+    border-radius: 0;
+  }
+  .mobile-overflow-x-scroll{
+    overflow-x: scroll;
+  }
+  .newsletter > input{
+    padding: 12px;
+    outline: none;
+    height: min-content;
+    font-size: large;
+  }
+  .newsletter > input:nth-child(2){
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .mobile-absolute{
+    position: absolute;
+  }
+  .mobile-flex-end{
+    justify-content: flex-end;
+    margin-right: 20px;
+  }
+  footer > ul{
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width:876px){
+  .desktop-hide{
+    display: none;
+  }
+}
