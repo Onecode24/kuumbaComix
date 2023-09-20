@@ -8,10 +8,10 @@ import Twitter from "./assets/icons/twitter.svg";
 import Facebook from "./assets/icons/facebook.svg";
 import Instagram from "./assets/icons/instagram.svg";
 import Youtube from "./assets/icons/youtube.svg";
-import Hambuger from "./assets/icons/hambergers.svg";
 import NotFound from "./components/global/NotFound";
 import SignIn from "./pages/signin"
 import Login from "./pages/login"
+import ComixView from "./pages/comixView"
 import Hamburger from 'hamburger-react'
 import { useState } from "react";
 
@@ -24,7 +24,9 @@ export default function App() {
           {/* <Route path="about" element={<About />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<NoMatch />} /> */}
+          <Route path="/comix/:id" element={<ComixView />} />
         </Route>
+        
         {/* For not fount pages */}
       <Route path="/signin" element={<SignIn />} />
       <Route path="/login" element={<Login />} />
@@ -38,12 +40,12 @@ function Layout() {
    const [isOpen, setOpen] = useState(false)
   return (
     <div >
-      <nav className="bg-orange flex py-5 px-10 items-center justify-between">
+      <nav className="flex items-center justify-between px-10 py-5 bg-orange">
          <div className="flex items-center w-2/3">
             <h2 className="text-2xl montserrat-extrabold">
                <Link Link to="/">KuumbaComix.</Link>
             </h2>
-            <ul className="flex ml-5 w-2/3 justify-around montserrat-regular mobile-hide">
+            <ul className="flex justify-around w-2/3 ml-5 montserrat-regular mobile-hide">
                <li>
                   <Link to="/">Acceuil</Link>
                </li>
@@ -59,7 +61,7 @@ function Layout() {
             </ul>
          </div>
 
-         <ul className="flex w-1/5 justify-around montserrat-regular items-center mobile-hide">
+         <ul className="flex items-center justify-around w-1/5 montserrat-regular mobile-hide">
             <div>
                <input type="text" name="" id="" className="hidden" />
                <li>
@@ -68,7 +70,7 @@ function Layout() {
                   </Link>
                </li>
             </div>
-            <li className="text-white flex px-2 py-2 items-center border-white border rounded-lg">
+            <li className="flex items-center px-2 py-2 text-white border border-white rounded-lg">
                <img src={EspaceIcon} alt="account" />
                <Link to="/signin" className="px-2">Mon Espace</Link>
             </li>
@@ -83,7 +85,7 @@ function Layout() {
                setOpen(toggled)
             }}  />
             <div className="nav-hamburger mobile-w-full mobile-hide">
-               <ul className=" bg-orange  my-5 montserrat-regular mobile-w-full">
+               <ul className="my-5 bg-orange montserrat-regular mobile-w-full">
                   <li>
                      <Link to="/">Acceuil</Link>
                   </li>
@@ -96,7 +98,7 @@ function Layout() {
                   <li>
                      <Link to="/">Communauté</Link>
                   </li>
-                  <li className="text-white flex  p-2 items-center border-white border rounded-lg max-w-max">
+                  <li className="flex items-center p-2 text-white border border-white rounded-lg max-w-max">
                      <img src={EspaceIcon} alt="account" className="mobile-hide" />
                      <Link to="/signin" className="">Mon Espace</Link>
                   </li>
@@ -113,7 +115,7 @@ function Layout() {
          <Outlet />
       </div>
 
-      <footer className="flex justify-evenly bg-orange-light py-5 montserrat-semibold mobile-block mobile-px-20 ">
+      <footer className="flex py-5 justify-evenly bg-orange-light montserrat-semibold mobile-block mobile-px-20 ">
          <div className="flex icons mobile-absolute mobile-flex-end min-mobile-w-95">
             <img src={Twitter} alt="Twitter" />
             <img src={Facebook} alt="Facebook" />
