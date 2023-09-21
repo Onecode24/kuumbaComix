@@ -14,7 +14,7 @@ const Home = () => {
          <div>
             <div className='flex justify-around py-16 patternBG block-reverse mobile-py-20 mobile-px-10'>
                 <div  className='w-1/2 mobile-w-full mobile-py-20'>
-                    <h1 className='text-4xl  montserrat-black mobile-text-size-2em'>Découvrez autrement l’histoire de l’Afrique.</h1>
+                    <h1 className='text-4xl montserrat-black mobile-text-size-2em'>Découvrez autrement l’histoire de l’Afrique.</h1>
                     <p className='py-3 text-justify montserrat-medium md:py-8 mobile-text-align'>Nous vous plongeons au cœur de l'histoire africaine avec nos bandes dessinées passionnantes. Découvrez chaque événement, chaque personnage emblématique et chaque moment clé de l'Afrique. Prêt à embarquer ? Consultez notre bibliothèque maintenant !...</p>
                     <div className='flex justify-around w-1/2 cat montserrat-regular mobile-w-full mobile-pt-20'>
                         <button className='bg-orange'>Commencez</button>
@@ -33,18 +33,18 @@ const Home = () => {
             <div>
                 <div className='flex my-10 justify-evenly mobile-block '>
                     <div className='flex justify-center mobile-mb-40'>
-                        <BDCard img={BDGuezo} title='Les Aventures de Guézo' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/1' />
+                        <BDCard img={BDGuezo} title='Les Aventures de Guézo' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/1' />
                     </div>
                     <div className='flex justify-center '>
-                        <BDCard img={BDTolegba} title='Le Roi Tolègba' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/2' />
+                        <BDCard img={BDTolegba} title='Le Roi Tolègba' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/2' />
                     </div>
                 </div>
                 <div className='flex my-10 justify-evenly mobile-block'>
                     <div className='flex justify-center mobile-mb-40'>
-                        <BDCard img={BDPygmes} title='Les pygmées mystérieux' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/3' />
+                        <BDCard img={BDPygmes} title='Les pygmées mystérieux' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/3' />
                     </div>
                     <div className='flex justify-center '>
-                        <BDCard img={BDPanthere} title='Le Roi Panthere' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/4' />
+                        <BDCard img={BDPanthere} title='Le Roi Panthere' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/4' />
                     </div>
                 </div>
             </div>
