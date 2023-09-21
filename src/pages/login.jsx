@@ -24,7 +24,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://143.198.201.85/api/token/', {
+      const response = await fetch('https://kuumbacomix.com/api/token/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

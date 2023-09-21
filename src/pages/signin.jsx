@@ -40,7 +40,7 @@ const SignIn = () => {
 
     try {
       // Utilisez la fonction fetch pour envoyer les données du formulaire à votre endpoint
-      const response = await fetch('http://143.198.201.85/api/user/', {
+      const response = await fetch('https://kuumbacomix.com/api/user/', {
         method: 'POST', // ou 'PUT' ou 'PATCH' en fonction de votre API
         headers: {
           'Content-Type': 'application/json',
