@@ -219,6 +219,11 @@ li{
   }
 }
 
+@media screen and (min-width: 876px) {
+  .pricing-card-width{
+    width: 30%;
+  }
+}
 
 
 .cat > button{
@@ -230,6 +235,3 @@ li{
   margin-bottom: 15px;
 }
 
-.pricing-card-width{
-  width: 30%;
-}

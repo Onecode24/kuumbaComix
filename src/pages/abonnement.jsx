@@ -15,10 +15,10 @@ const Abonnement = () => {
                 </div>
             </div>
             <section id="pricing">
-                <div className="flex flex-wrap my-10 px-10 justify-around">
+                <div className="md:flex my-10 px-10 justify-around">
                     {/* Fisrt offer */}
-                    <div className="w-full shadow-xl md:pricing-card-width h-min my-5">
-                        <div className="  px-3">
+                    <div className="w-full shadow-xl pricing-card-width h-min my-5">
+                        <div className="px-3">
                             <div className="">
                                 <h3 className="text-3xl py-5 montserrat-bold text-orange">Standart</h3>
                                 <p className="text-gray-ligth montserrat-regular md:w-4/5 text-sm">
@@ -42,8 +42,8 @@ const Abonnement = () => {
                         </div>
                     </div>
                     {/* Second offer */}
-                    <div className="w-full md:pricing-card-width bg-blue shadow-xl my-5">
-                        <div className="  px-3 md:py-10 text-white">
+                    <div className="w-full shadow-xl pricing-card-width bg-blue my-5 mt-[-15px]">
+                        <div className="px-3 md:py-10 text-white">
                             <div className="">
                                 <h3 className="text-3xl py-5 montserrat-bold ">Acces +</h3>
                                 <p className=" montserrat-regular md:w-4/5 text-sm">
@@ -67,7 +67,7 @@ const Abonnement = () => {
                         </div>
                     </div>
                     {/* Third offer */}
-                    <div className="w-full shadow-xl md:pricing-card-width h-min my-5">
+                    <div className="w-full shadow-xl pricing-card-width h-min my-5">
                         <div className="px-3">
                             <div className="">
                                 <h3 className="text-3xl py-5 montserrat-bold text-orange">Royal</h3>
