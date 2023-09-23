@@ -12,6 +12,9 @@ const SignIn = () => {
     password: '',
     username: '',
     confirmPassword: '',
+    tel: '0000', // Valeur par défaut pour le champ "tel"
+    pays: 'Benin', // Valeur par défaut pour le champ "pays"
+    profile_photo: 'https://kuumbacomix.vercel.app/', // Valeur par défaut pour le champ "pays"
   });
 
   const [errorMessage, setErrorMessage] = useState('');
