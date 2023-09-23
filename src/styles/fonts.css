@@ -55,6 +55,11 @@
     font-family: 'Montserrat-Black';
 }
 
-.cat > button{
-    padding: 10px;
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../fonts/Poppins-Regular.ttf');
+}
+
+.poppins-regular {
+    font-family: 'Poppins-Regular';
 }

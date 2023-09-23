@@ -12,6 +12,7 @@ import NotFound from "./components/global/NotFound";
 import SignIn from "./pages/signin"
 import Login from "./pages/login"
 import ComixView from "./pages/comixView"
+import Abonnement from "./pages/abonnement"
 import Hamburger from 'hamburger-react'
 import { useState } from "react";
 
@@ -25,6 +26,7 @@ export default function App() {
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="*" element={<NoMatch />} /> */}
           <Route path="/comix/:id" element={<ComixView />} />
+          <Route path="/abonnement" element={<Abonnement />} />
         </Route>
         
         {/* For not fount pages */}
@@ -53,7 +55,7 @@ function Layout() {
                   <Link to="/">Catégorie</Link>
                </li>
                <li>
-                  <Link to="/">Abonnement</Link>
+                  <Link to="/abonnement">Abonnement</Link>
                </li>
                <li>
                   <Link to="/">Communauté</Link>

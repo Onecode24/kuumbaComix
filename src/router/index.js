@@ -10,6 +10,10 @@ const Routes = createBrowserRouter([
       path: "/comix/:id",
       element: <ComixView />,
    },
+   {
+      path: "/abonnement",
+      element: <Abonnement />,
+   }
 ])
 
 export default Routes;

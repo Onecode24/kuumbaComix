@@ -6,6 +6,7 @@ import BDGuezo from '../assets/bd-guezo.png';
 import BDTolegba from '../assets/bd-tolegba.png';
 import BDPygmes from '../assets/bd-pygmes.png';
 import BDPanthere from '../assets/bd-panthere.png';
+import listIcon from "../assets/icons/losange.svg";
 
 export default function ComixView(){
     return(
@@ -18,9 +19,9 @@ export default function ComixView(){
                     <h3 className="text-xl montserrat-bold">Les Aventures de Guézo</h3>
                     <p className="my-2 text-justify montserrat-medium">Description : "Les Aventures de Guézo" est une bande dessinée qui s'inspire du roi béninois Guézo, un souverain remarquable qui a lutté pour garder l'indépendance de son royaume et a révolutionné son économie. Dans cette série palpitante, suivez les péripéties de Guézo et découvrez ses initiatives bienveillantes, son courage et sa détermination à protéger son peuple.</p>
                     <div className="py-2">
-                        <ComixFeature value="354 Pages"></ComixFeature>
-                        <ComixFeature value="80 % d’illustrations"></ComixFeature>
-                        <ComixFeature value="Publié le : 12 Janvier 2016"></ComixFeature>
+                        <ComixFeature value="354 Pages" icon={listIcon} ></ComixFeature>
+                        <ComixFeature value="80 % d’illustrations" icon={listIcon}></ComixFeature>
+                        <ComixFeature value="Publié le : 12 Janvier 2016" icon={listIcon}></ComixFeature>
                     </div>
                     <div className="mt-6 montserrat-medium">
                         <button className='block w-3/4 px-6 py-3 mx-auto my-3 text-black bg-orange md:w-full'>Commencer la lecture</button>    

@@ -36,8 +36,25 @@ li{
 }
 
 .border-orange{
+  border: 1px solid rgba(255, 165, 0, 1);
+}
+
+.border-orange-ligth{
    border: 1px solid rgba(255, 165, 0, 0.1);
 }
+
+.bg-blue{
+  background-color: #005EB8;
+}
+
+.text-gray-975{
+  color : #173E48;
+}
+
+.text-gray-ligth{
+  color : #828282;
+}
+
 
 .bg-viewport{
   width: 100vw;
@@ -203,3 +220,16 @@ li{
 }
 
 
+
+.cat > button{
+  padding: 10px;
+}
+
+.pricing-feature > div{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.pricing-card-width{
+  width: 30%;
+}
