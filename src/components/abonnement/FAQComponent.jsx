@@ -8,7 +8,7 @@ const FaqComponent = (props) => {
     }
 
     return (
-        <div className='px-5 py-2 my-3 bg-orange-light montserrat-medium'>
+        <div className='px-5 py-2 my-3 bg-orange-light montserrat-medium cursor-pointer'>
             <div className='flex justify-between' onClick={display}>
                 <h4>{props.question}</h4>
                 <img src={crossIcon} alt="+" />

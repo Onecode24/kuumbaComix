@@ -16,7 +16,7 @@ const Home = () => {
                 <div  className='w-1/2 mobile-w-full mobile-py-20'>
                     <h1 className='text-4xl montserrat-black mobile-text-size-2em'>Découvrez autrement l’histoire de l’Afrique.</h1>
                     <p className='py-3 text-justify montserrat-medium md:py-8 mobile-text-align'>Nous vous plongeons au cœur de l'histoire africaine avec nos bandes dessinées passionnantes. Découvrez chaque événement, chaque personnage emblématique et chaque moment clé de l'Afrique. Prêt à embarquer ? Consultez notre bibliothèque maintenant !...</p>
-                    <div className='flex justify-between w-1/2 lg:w-2/3 cat montserrat-regular mobile-w-full mobile-pt-20'>
+                    <div className='flex md:justify-between justify-around w-1/2 lg:w-1/2 cat montserrat-regular mobile-w-full mobile-pt-20'>
                         <button className='bg-orange'>Commencez</button>
                         <button className='border border-black mobile-border-blue mobile-text-color-blue'>En savoir plus</button>    
                     </div>
@@ -28,7 +28,7 @@ const Home = () => {
                     <h2 className='pb-2 text-2xl montserrat-black'>Une expérience unique vous attend</h2>
                     <p className='text-justify montserrat-medium'>Passionné d'art, de culture ou des récits, notre plateforme vous fait vivre une expérience de lecture époustouflante. Embarquez dans un voyage épique à travers les époques, des légendes ancestrales aux récits contemporains.</p>
                 </div>
-                <button className='px-8 py-4 rounded bg-orange h-min montserrat-regular mobile-radius-none'>Explorez</button>
+                <button className='px-8 py-4  bg-orange h-min montserrat-regular mobile-radius-none'>Explorez</button>
             </div>
             <div>
                 <div className='flex my-10 justify-evenly mobile-block '>
