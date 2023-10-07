@@ -16,7 +16,7 @@ const Home = () => {
                 <div  className='w-1/2 mobile-w-full mobile-py-20'>
                     <h1 className='text-4xl montserrat-black mobile-text-size-2em'>Découvrez autrement l’histoire de l’Afrique.</h1>
                     <p className='py-3 text-justify montserrat-medium md:py-8 mobile-text-align'>Nous vous plongeons au cœur de l'histoire africaine avec nos bandes dessinées passionnantes. Découvrez chaque événement, chaque personnage emblématique et chaque moment clé de l'Afrique. Prêt à embarquer ? Consultez notre bibliothèque maintenant !...</p>
-                    <div className='flex justify-around w-1/2 cat montserrat-regular mobile-w-full mobile-pt-20'>
+                    <div className='flex justify-between w-1/2 lg:w-2/3 cat montserrat-regular mobile-w-full mobile-pt-20'>
                         <button className='bg-orange'>Commencez</button>
                         <button className='border border-black mobile-border-blue mobile-text-color-blue'>En savoir plus</button>    
                     </div>
@@ -28,23 +28,23 @@ const Home = () => {
                     <h2 className='pb-2 text-2xl montserrat-black'>Une expérience unique vous attend</h2>
                     <p className='text-justify montserrat-medium'>Passionné d'art, de culture ou des récits, notre plateforme vous fait vivre une expérience de lecture époustouflante. Embarquez dans un voyage épique à travers les époques, des légendes ancestrales aux récits contemporains.</p>
                 </div>
-                <button className='px-8 py-4 rounded-lg bg-orange h-min montserrat-regular mobile-radius-none'>Explorez</button>
+                <button className='px-8 py-4 rounded bg-orange h-min montserrat-regular mobile-radius-none'>Explorez</button>
             </div>
             <div>
                 <div className='flex my-10 justify-evenly mobile-block '>
                     <div className='flex justify-center mobile-mb-40'>
-                        <BDCard img={BDGuezo} title='Les Aventures de Guézo' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/1' />
+                        <BDCard img={BDGuezo} title='Les Aventures de Guézo' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/guezo' />
                     </div>
                     <div className='flex justify-center '>
-                        <BDCard img={BDTolegba} title='Le Roi Tolègba' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/2' />
+                        <BDCard img={BDTolegba} title='Le Roi Tolègba' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='' />
                     </div>
                 </div>
                 <div className='flex my-10 justify-evenly mobile-block'>
                     <div className='flex justify-center mobile-mb-40'>
-                        <BDCard img={BDPygmes} title='Les pygmées mystérieux' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/3' />
+                        <BDCard img={BDPygmes} title='Les pygmées mystérieux' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='' />
                     </div>
                     <div className='flex justify-center '>
-                        <BDCard img={BDPanthere} title='Le Roi Panthere' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/comix/4' />
+                        <BDCard img={BDPanthere} title='Le Roi Panthere' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='' />
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@ const Home = () => {
                 <h4 className='text-3xl montserrat-extrabold'>Abonnez-vous à notre Newsletter</h4>
                 <p className='my-3 montserrat-regular'>Ne ratez rien de nos actualités en vous abonnant à notre Newsletter.  Restez à l'affût des dernières BD, des promotions spéciales et plongez dans l'univers captivant des histoires africaines. Abonnez-vous dès maintenant !</p>
                 <div className='flex items-center mt-5 newsletter montserrat-regular mobile-block'>
-                    <input type="text" name="name" placeholder="Votre nom*" className='w-full mobile-py-10' />
+                    <input type="text" name="name" placeholder="Votre nom*" className='w-full mobile-py-20' />
                     <input type="email" name="e-mail" placeholder="Email*" className='w-full mobile-py-10' />
                     <input type="button" value="S'abonner" className='w-full text-white cursor-pointer btn-bg-gris mobile-py-10' />
                 </div>

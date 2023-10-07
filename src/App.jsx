@@ -52,13 +52,13 @@ function Layout() {
                   <Link to="/">Acceuil</Link>
                </li>
                <li>
-                  <Link to="/">Catégorie</Link>
+                  <Link to="/category">Catégorie</Link>
                </li>
                <li>
                   <Link to="/abonnement">Abonnement</Link>
                </li>
                <li>
-                  <Link to="/">Communauté</Link>
+                  <Link to="/commuunity">Communauté</Link>
                </li>
             </ul>
          </div>
@@ -72,7 +72,7 @@ function Layout() {
                   </Link>
                </li>
             </div>
-            <li className="flex items-center px-2 py-2 text-white border border-white rounded-lg">
+            <li className="flex items-center px-2 py-2 text-white border border-white ">
                <img src={EspaceIcon} alt="account" />
                <Link to="/signin" className="px-2">Mon Espace</Link>
             </li>
@@ -92,13 +92,13 @@ function Layout() {
                      <Link to="/">Acceuil</Link>
                   </li>
                   <li>
-                     <Link to="/">Catégorie</Link>
+                     <Link to="/category">Catégorie</Link>
                   </li>
                   <li>
-                     <Link to="/">Abonnement</Link>
+                     <Link to="/abonnement">Abonnement</Link>
                   </li>
                   <li>
-                     <Link to="/">Communauté</Link>
+                     <Link to="/commuunity">Communauté</Link>
                   </li>
                   <li className="flex items-center p-2 text-white border border-white rounded-lg max-w-max">
                      <img src={EspaceIcon} alt="account" className="mobile-hide" />

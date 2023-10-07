@@ -1,7 +1,7 @@
 import Star from '../assets/icons/star.svg'
 const TestimonalsCards = (props) => {
     return (
-        <article className="w-full p-5 bg-testimonal h-full rounded-xl border border-[#FFA500]">
+        <article className="w-full p-5 bg-testimonal h-full  border border-[#FFA500]">
             <div className='flex items-center'>
                 <img src={props.profile} alt="profile" />
                 <div className='ml-3'>

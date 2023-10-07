@@ -11,7 +11,7 @@ import listIcon from "../assets/icons/losange.svg";
 export default function ComixView(){
     return(
         <div className="">
-            <section className="md:flex md:w-full">
+            <div className="md:flex md:w-full">
                 <div className="flex items-center justify-center md:w-2/3">
                     <img src={BDGuezo} alt="comix-cover" className="md:h-[60vh]" />
                 </div>
@@ -28,8 +28,8 @@ export default function ComixView(){
                         <button className='block w-3/4 px-6 py-3 mx-auto my-3 border border-blue-500 mobile-border-blue mobile-text-color-blue md:w-full'>Ajouter au favoris</button>    
                     </div>
                 </div>
-            </section>
-            <article className="px-3 md:px-10">
+            </div>
+            <div className="px-3 md:px-10">
                 <h3 className="py-4 text-xl montserrat-bold">Synopsis</h3>
                 <p className="text-justify md:w-2/3 montserrat-regular ">
                     Plongez dans les récits captivants des aventures de Guézo, un roi béninois qui a marqué l'histoire de son royaume par son leadership visionnaire. À travers les pages de cette bande dessinée, découvrez les hauts faits de Guézo, de ses batailles pour l'indépendance de son royaume à ses efforts pour révolutionner l'économie locale. Suivez Guézo dans ses quêtes pour protéger son peuple contre les forces adverses, tout en défendant les valeurs de l'honneur, de la justice et de la prospérité. Avec sa bravoure, sa sagesse et sa vision, Guézo est un héros inspirant dont les aventures vous transporteront dans un monde d'action, d'intrigue et d'émotions fortes.
@@ -40,8 +40,8 @@ export default function ComixView(){
                     <Tags value="Aventure"></Tags>
                     <Tags value="Historique"></Tags>
                 </div>
-            </article>
-            <section className="my-16 ">
+            </div>
+            <div className="my-16 ">
                 <h3 className="px-10 text-xl montserrat-bold">Bandes dessinés de la même catégories</h3>
                 <div className='flex my-10 justify-evenly mobile-block '>
                     <div className='flex justify-center mobile-mb-40'>
@@ -65,7 +65,7 @@ export default function ComixView(){
                         <BDCard img={BDGuezo} title='Les Aventures de Guézo' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.' url='/bd/1' />
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
     )
 }
